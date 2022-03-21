@@ -31,7 +31,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: build and publish
-        run: | # change 'smart-cam' to whatever you want to name the image and 'latest' to whatever tag you want. existing images will be overwritten
-          docker build . --squash --tag ghcr.io/${{ github.repository }}/smart-cam:latest 
-          docker run ghcr.io/${{ github.repository }}/smart-cam:latest
-          docker push ghcr.io/${{ github.repository }}/smart-cam:latest
+        run: | # change 'smart-sec-cam-motion' to whatever you want to name the image and 'latest' to whatever tag you want. existing images will be overwritten
+          docker build . --squash --tag ghcr.io/${{ github.repository }}/smart-sec-cam-motion:latest 
+          docker run ghcr.io/${{ github.repository }}/smart-sec-cam-motion:latest
+          docker push ghcr.io/${{ github.repository }}/smart-sec-cam-motion:latest
